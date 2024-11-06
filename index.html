@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+
+    <!-- Estilo simples somente para deixar bonito -->
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        html, body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-width: 100vh;
+            
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form button{
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        form label {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+        <!-- Titulo, descrição e formulário para cadastro -->
+        <h1>Fomulário de Cadastro</h1>
+
+        <form action="" method="post">
+            <caption>Preencha os dados para se cadastrar.</caption>
+            
+            <label for="name">Nome</label>
+            <input id="name" type="text">
+           
+            <label for="email">E-mail</label>
+            <input id="email" type="email">
+            
+            <label for="password">Senha</label>
+            <input id="password" type="password">
+            
+            <button type="submit">Cadastrar</button>
+        </form>
+</body>
+</html>
