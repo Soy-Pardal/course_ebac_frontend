@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: hsl(0, 100%, 99%);
+}
+
+.menu-header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Style for Header */
+.container-header {
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    color: brown;
+    border-bottom: solid brown 2px;
+}
+
+.container-header h1 {
+    display: block;
+    color: brown;
+}
+
+.container-header li {
+    display: inline;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.container-header li:hover {
+    background-color: #a52a2b;
+}
+
+.container-header li:hover a {
+    color: white;
+}
+
+.container-header a {
+    text-decoration: none;
+    color: brown;
+}
+
+/* Style sections */
+.sections-list {
+    padding: 0 60px;
+    padding-top: 120px; /* Compensa a altura do header fixo */
+}
+
+/* Esportes */
+#sports {
+    border-radius: 5px;
+    background-color: #fdf2e9; 
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Economia */
+#economy {
+    border-radius: 5px;
+    background-color: #eef6f8; 
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Tecnologia */
+#technology {
+    border-radius: 5px;
+    background-color: #f3f0ff; 
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Política */
+#politics {
+    border-radius: 5px;
+    background-color: #fff5f7; 
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.sections-list h2 {
+    color: #a52a2b;
+    font-size: 2em;
+    border-bottom: #a52a2b solid 1px;
+    margin-bottom: 15px;
+}
+
+/* Style articles */
+.container-articles {
+    margin: 35px 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-articles article {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 10px;
+    align-items: center;
+    background-color: white;
+    border: solid #a52a2b 1px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    width: 32%;
+    min-width: 200px;
+    padding: 10px 15px;
+}
+
+.container-articles img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.container-articles time {
+    color: rgb(187, 125, 133);
+}
+
+.container-articles h3 {
+    color: #a52a2b;
+}
+
+.container-articles p {
+    color: #c21919;
+}
+
+.container-articles a {
+    width: 100%;
+    text-align: center;
+    padding: 10px 15px;
+    background-color: #a52a2b;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive article */
+@media (max-width: 768px) {
+    .container-articles article {
+        width: 100%; 
+    }
+}
