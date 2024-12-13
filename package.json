@@ -1,0 +1,15 @@
+{
+  "name": "sass",
+  "version": "0.0.1",
+  "description": "Projeto utilizando SASS",
+  "main": "index.js",
+  "scripts": {
+    "build:sass": "sass resources/sass/main.scss build/css/styles.css --style=compressed",
+    "watch:sass": "sass --watch resources/sass/main.scss build/css/styles.css --style=expanded"
+  },
+  "author": "Gabriel Dal Prá",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.83.0"
+  }
+}

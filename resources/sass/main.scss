@@ -1,0 +1,7 @@
+@use 'base/variables';   // Importa variáveis
+@use 'base/global';      // Estilos globais
+@use 'layout/container'; // Layout container
+@use 'layout/header';    // Header
+@use 'components/menu';  // Menu
+@use 'components/products'; // Produtos
+@use 'components/button'; // Botão de produto
