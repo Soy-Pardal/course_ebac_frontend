@@ -1,0 +1,16 @@
+{
+  "name": "gulp-projeto",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.63.6",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-sourcemaps": "^3.0.0"
+  }
+}

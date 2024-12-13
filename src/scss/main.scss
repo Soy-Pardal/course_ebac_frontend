@@ -1,0 +1,42 @@
+@use 'variables' as varColor;
+@use 'sass:color';
+
+body {
+  font-family: varColor.$font-stack;
+  background-color: varColor.$secondary-color;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+
+  h1 {
+    color: varColor.$primary-color;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: varColor.$primary-color;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px auto;
+  display: block;
+  width: 150px;
+  text-align: center;
+
+  &:hover {
+    background-color: color.scale(varColor.$primary-color, $lightness: -10%);
+
+    cursor: pointer;
+  }
+
+}
