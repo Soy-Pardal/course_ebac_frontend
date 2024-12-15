@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Grunt</title>
+    <link rel="stylesheet" href="@@DESTINO_CSS">
+</head>
+<body>
+    <div class="container">
+        <h1>SORTEIA JÁ</h1>
+        <p>Sorteie <input type="number" id="quantidade" value="1" min="1"> número</p>
+        <p>entre <input type="number" id="min" value="1"> e <input type="number" id="max" value="100"></p>
+
+        <select id="opcoes">
+            <option value="único">Único</option>
+            <option value="semRepetir">Sem Repetir</option>
+        </select>
+
+        <button id="sortear">SORTEAR AGORA!</button>
+        <div id="resultado">
+            <ul id="lista-resultados"></ul>
+        </div>
+
+        <p class="info">Sorteador de números desenvolvido por Gabriel Dal Prá!</p>
+    </div>
+
+    <script src="@@DESTINO_JS"></script>
+</body>
+</html>

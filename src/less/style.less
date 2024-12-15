@@ -1,0 +1,102 @@
+@primary-color: #a23bcf;
+@primary-hover: #8b2fb8;
+@background-color: #f7f7f7;
+@card-background: white;
+@text-color: #333;
+@font-stack: Arial, sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: @font-stack;
+}
+
+body {
+    background-color: @background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: @card-background;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+input, select {
+    padding: 5px;
+    font-size: 1rem;
+    margin: 5px;
+    width: 60px;
+}
+
+button {
+    background-color: @primary-color;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+        background-color: @primary-hover;
+    }
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: @text-color;
+    font-weight: bold;
+}
+
+#lista-resultados {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    width: fit-content;
+    text-align: center;
+
+    li {
+        background-color: lighten(@background-color, 5%);
+        color: @text-color;
+        padding: 8px 15px;
+        margin: 5px 0;
+        border: 1px solid darken(@background-color, 10%);
+        border-radius: 5px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+            background-color: lighten(@background-color, 10%);
+        }
+    }
+}
+
+.info {
+    margin-top: 10px;
+    color: gray;
+    font-size: 0.9rem;
+}
